@@ -5,8 +5,8 @@ c2880c06d3d9   nginx     "/docker-entrypoint.…"   About a minute ago   Exited 
 06c6c89b4642   nginx     "/docker-entrypoint.…"   About a minute ago   Up About a minute           80/tcp    hardcore_williamson
 
 ex 1.2
-selja@LAPTOP-BP0ASLQF:.../devops-with-docker$ sudo docker ps -a
+$ sudo docker ps -a
 CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
 
-selja@LAPTOP-BP0ASLQF:.../devops-with-docker$ sudo docker images
+$ sudo docker images
 REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
