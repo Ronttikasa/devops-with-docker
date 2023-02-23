@@ -8,4 +8,4 @@ COPY web-search.sh .
 
 RUN chmod +x web-search.sh
 
-CMD ./web-search.sh
+ENTRYPOINT [ "./web-search.sh" ]

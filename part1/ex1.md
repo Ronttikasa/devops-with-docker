@@ -42,6 +42,7 @@ tail -f ./text.log
 
 ### ex 1.6
 input: basics
+
 answer: You found the correct password. Secret message is:
 "This is the secret message"
 
@@ -56,4 +57,9 @@ CMD server
 ```
 docker build . -t web-server
 docker run web-server
+```
+
+### ex 1.9
+```
+docker run -v "$(pwd)/text.log:/usr/src/app/text.log" devopsdockeruh/simple-web-service
 ```
