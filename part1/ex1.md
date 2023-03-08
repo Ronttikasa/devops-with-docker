@@ -74,4 +74,10 @@ docker run -p 8080:8080 simple-web-service
 ```
 docker build . -t backend
 docker run -p 127.0.0.1:8080:8080 backend
-````
+```
+
+### ex 1.14
+```
+docker build . -t backend && docker run -p 127.0.0.1:8080:8080 backend
+docker build . -t front && docker run -p 127.0.0.1:8000:5000 front
+```
