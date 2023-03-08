@@ -66,6 +66,12 @@ docker run -v "$(pwd)/text.log:/usr/src/app/text.log" devopsdockeruh/simple-web-
 
 ### ex 1.10
 Added `EXPOSE 8080` to Dockerfile
-````
+```
 docker run -p 8080:8080 simple-web-service
 ```
+
+### ex 1.13
+```
+docker build . -t backend
+docker run -p 127.0.0.1:8080:8080 backend
+````
