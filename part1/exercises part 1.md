@@ -84,3 +84,8 @@ docker build . -t front && docker run -p 127.0.0.1:8000:5000 front
 
 ### ex 1.15
 Dockerhub repo: https://hub.docker.com/repository/docker/ronttikasa/country-info/general
+
+### ex 1.16
+Deployed app: https://maiden-tiedot.fly.dev/
+
+I set up a fly.io account, installed flyctl and ran `fly launch` in the app directory.
