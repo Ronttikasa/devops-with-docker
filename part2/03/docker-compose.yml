@@ -1,12 +1,23 @@
 version: '3.8'
 
-services:
+services: 
     frontend:
       build: ./frontend
       ports:
-        - 5000:5000
+        - 8000:5000 # 8000 is the port on the host machine, 5000 is the port on the container
+      container_name: frontend
 
     backend:
       build: ./backend
-      ports:
+      environment:
+        - REDIS_HOST=redis
+      ports: 
         - 8080:8080
+      container_name: backend
+
+    redis:
+      image: redis:7.0.10-alpine
+      command: redis-server
+      container_name: redis
+      restart: unless-stopped
+
