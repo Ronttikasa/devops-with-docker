@@ -38,5 +38,17 @@ services:
       volumes:
         - ./database:/var/lib/postgresql/data
 
+    nginx:
+      image: nginx:1.21.0-alpine
+      container_name: nginx
+      restart: unless-stopped
+      ports:
+        - 80:80
+      volumes:
+        - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      depends_on:
+        - frontend
+        - backend
+
 volumes:
   redis:
